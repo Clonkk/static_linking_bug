@@ -1,2 +1,4 @@
 libfoo.so
 libfoo.a
+foo.dll
+foo.lib

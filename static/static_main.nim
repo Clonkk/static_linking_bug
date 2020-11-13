@@ -1,4 +1,8 @@
-{.passL:"libfoo.a".}
+when defined(windows):
+  {.passL:"foo.lib"}
+else:
+  {.passL:"libfoo.a".}
+
 proc add*(a, b: int): int {.cdecl, importc.}
 proc sub*(a, b: int): int {.cdecl, importc.}
 
