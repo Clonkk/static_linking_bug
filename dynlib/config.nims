@@ -1,5 +1,3 @@
-import os
-
 task foo, "foo":
   var strCmd = "c "
   strCmd.add("--app:lib ")

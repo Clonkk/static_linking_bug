@@ -2,6 +2,7 @@ when defined(windows):
   const libfoo = "foo.dll"
 else:
   const libfoo = "./libfoo.so"
+
 proc add*(a, b: int): int {.cdecl, importc, dynlib: libfoo.}
 proc sub*(a, b: int): int {.cdecl, importc, dynlib: libfoo.}
 
