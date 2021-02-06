@@ -2,3 +2,5 @@ libfoo.so
 libfoo.a
 foo.dll
 foo.lib
+static_main
+dyn_main
